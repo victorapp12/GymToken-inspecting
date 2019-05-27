@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32AA209E68C741B49AD61728 /* Pods_Gympass_Token.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CAC6C7354A9B9C1815C0749 /* Pods_Gympass_Token.framework */; };
+		93318D86229B40C200A17EB3 /* DailyTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93318D85229B40C200A17EB3 /* DailyTokenResponse.swift */; };
 		93B1C0BA229B37DB00C8C3AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B1C0B9229B37DB00C8C3AB /* AppDelegate.swift */; };
 		93B1C0BC229B37DB00C8C3AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B1C0BB229B37DB00C8C3AB /* ViewController.swift */; };
 		93B1C0BF229B37DB00C8C3AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B1C0BD229B37DB00C8C3AB /* Main.storyboard */; };
@@ -15,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CAC6C7354A9B9C1815C0749 /* Pods_Gympass_Token.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gympass_Token.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54A9DA0F10C0692354D09BCA /* Pods-Gympass Token.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gympass Token.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gympass Token/Pods-Gympass Token.debug.xcconfig"; sourceTree = "<group>"; };
+		93318D85229B40C200A17EB3 /* DailyTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTokenResponse.swift; sourceTree = "<group>"; };
 		93B1C0B6229B37DB00C8C3AB /* Gympass Token.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gympass Token.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93B1C0B9229B37DB00C8C3AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93B1C0BB229B37DB00C8C3AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		93B1C0C0229B37DC00C8C3AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93B1C0C3229B37DC00C8C3AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93B1C0C5229B37DC00C8C3AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD96DD8E432745FF7081361B /* Pods-Gympass Token.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gympass Token.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gympass Token/Pods-Gympass Token.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32AA209E68C741B49AD61728 /* Pods_Gympass_Token.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57E124AFE294FBE6C08AA503 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54A9DA0F10C0692354D09BCA /* Pods-Gympass Token.debug.xcconfig */,
+				DD96DD8E432745FF7081361B /* Pods-Gympass Token.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		93B1C0AD229B37DA00C8C3AB = {
 			isa = PBXGroup;
 			children = (
 				93B1C0B8229B37DB00C8C3AB /* Gympass Token */,
 				93B1C0B7229B37DB00C8C3AB /* Products */,
+				57E124AFE294FBE6C08AA503 /* Pods */,
+				E2CEBAC4D66CCB963F5C5130 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +78,17 @@
 				93B1C0C0229B37DC00C8C3AB /* Assets.xcassets */,
 				93B1C0C2229B37DC00C8C3AB /* LaunchScreen.storyboard */,
 				93B1C0C5229B37DC00C8C3AB /* Info.plist */,
+				93318D85229B40C200A17EB3 /* DailyTokenResponse.swift */,
 			);
 			path = "Gympass Token";
+			sourceTree = "<group>";
+		};
+		E2CEBAC4D66CCB963F5C5130 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CAC6C7354A9B9C1815C0749 /* Pods_Gympass_Token.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93B1C0C8229B37DC00C8C3AB /* Build configuration list for PBXNativeTarget "Gympass Token" */;
 			buildPhases = (
+				A7C7407D475D8BED3863690E /* [CP] Check Pods Manifest.lock */,
 				93B1C0B2229B37DB00C8C3AB /* Sources */,
 				93B1C0B3229B37DB00C8C3AB /* Frameworks */,
 				93B1C0B4229B37DB00C8C3AB /* Resources */,
+				040B3983B6AA4D4FDC61512F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +159,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		040B3983B6AA4D4FDC61512F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Gympass Token/Pods-Gympass Token-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gympass Token/Pods-Gympass Token-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7C7407D475D8BED3863690E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gympass Token-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		93B1C0B2229B37DB00C8C3AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				93B1C0BC229B37DB00C8C3AB /* ViewController.swift in Sources */,
+				93318D86229B40C200A17EB3 /* DailyTokenResponse.swift in Sources */,
 				93B1C0BA229B37DB00C8C3AB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +357,7 @@
 		};
 		93B1C0C9229B37DC00C8C3AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54A9DA0F10C0692354D09BCA /* Pods-Gympass Token.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +376,7 @@
 		};
 		93B1C0CA229B37DC00C8C3AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD96DD8E432745FF7081361B /* Pods-Gympass Token.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
